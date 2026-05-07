@@ -24,21 +24,19 @@ const closeAdminModal = () => {
     adminModal.value.show = false;
 };
 
-// Form Action Laravel (Gunakan useForm tanpa state awal jika hanya untuk method, tapi pengiriman data diatur di methodnya)
+// Form Action Laravel
 const formAction = useForm({});
 
-// Fungsi Konfirmasi Selesai (FIXED VERSION)
+// Fungsi Konfirmasi Selesai
 const confirmComplete = (id) => {
     showAdminModal(
         'Selesaikan Pesanan? ✅',
         'Pastikan pelanggan sudah membayar dan menerima pesanan.',
         'confirm',
         () => {
-            // Cara yang benar mengirim data PATCH di Inertia useForm:
-            // form.patch(url, { data_yang_dikirim })
             formAction.transform((data) => ({
                 ...data,
-                status: 'completed', // Sisipkan status di sini
+                status: 'completed', 
             })).patch(route('orders.updateStatus', id), {
                 onSuccess: () => {
                     closeAdminModal();
@@ -305,7 +303,9 @@ const openWA = (number, name) => {
                         <p class="text-xs font-bold bg-gray-50 p-4 rounded-2xl italic border border-gray-100">"{{ selectedOrder.address_detail }}"</p>
                     </div>
 
-                    <a :href="`http://googleusercontent.com/maps.google.com/maps?q=${selectedOrder.latitude},${selectedOrder.longitude}`" target="_blank" class="mx-2 py-4 bg-[#D98A59] text-white rounded-2xl font-black text-center block shadow-lg hover:bg-[#C47545] transition uppercase">
+                    <a :href="`https://www.google.com/maps/dir/?api=1&destination=${selectedOrder.latitude},${selectedOrder.longitude}`" 
+                       target="_blank" 
+                       class="mx-2 py-4 bg-[#D98A59] text-white rounded-2xl font-black text-center block shadow-lg hover:bg-[#C47545] transition uppercase">
                         <i class="fa-solid fa-diamond-turn-right mr-2"></i> BUKA RUTE GOOGLE MAPS
                     </a>
                 </div>
