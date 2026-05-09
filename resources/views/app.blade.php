@@ -6,7 +6,7 @@
 
         <title inertia>{{ config('app.name', 'ObatHaus') }}</title>
 
-        <link rel="icon" type="image/png" href="{{ asset('logo-obathaus.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('logonya.png') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
