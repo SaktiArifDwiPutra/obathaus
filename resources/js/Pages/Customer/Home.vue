@@ -102,7 +102,10 @@
             <div class="space-y-4">
                 <div v-for="product in products" :key="product.id" class="bg-white p-3 rounded-[2rem] shadow-sm border-2 border-[#F2E8D9] flex items-center transition hover:shadow-md">
                     <div class="w-24 h-24 bg-[#FFFDF8] rounded-3xl mr-4 flex-shrink-0 flex items-center justify-center border-2 border-[#F2E8D9]">
-                        <span class="text-4xl">🥤</span>
+                        <img 
+                            :src="`/products/${product.image}`"
+                            class="w-full h-full object-cover rounded-2xl"
+                        />
                     </div>
                     <div class="flex-grow flex flex-col justify-between h-24 py-2 pr-2">
                         <div>

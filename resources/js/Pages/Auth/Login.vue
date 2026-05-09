@@ -1,5 +1,6 @@
 <script setup>
 import { Head, Link, useForm } from '@inertiajs/vue3';
+const logo = "/logonya.png";
 
 defineProps({
     canResetPassword: {
@@ -44,7 +45,11 @@ const submit = () => {
             <!-- Logo Obat Haus -->
             <div class="flex justify-center mb-6">
                 <div class="w-24 h-24 bg-[#D98A59] rounded-full p-1 shadow-lg border-[5px] border-[#FFFDF8] flex items-center justify-center">
-                    <span class="text-4xl drop-shadow-md">🧉</span>
+                <img 
+                    :src="logo" 
+                    alt="Logo Obat Haus"
+                    class="w-full h-full object-cover rounded-full"
+                />
                 </div>
             </div>
             
@@ -99,14 +104,6 @@ const submit = () => {
                         >
                         <span class="ms-2 text-sm font-black text-gray-500">Ingat Saya</span>
                     </label>
-
-                    <Link 
-                        v-if="canResetPassword" 
-                        :href="route('password.request')" 
-                        class="text-xs font-black text-[#D98A59] hover:text-[#C47545] transition"
-                    >
-                        Lupa Sandi?
-                    </Link>
                 </div>
 
                 <!-- Tombol Login -->

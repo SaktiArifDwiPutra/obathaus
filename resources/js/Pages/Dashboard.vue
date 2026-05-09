@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+const logo = "/logonya.png";
 
 const props = defineProps({
     stats: Object,
@@ -129,8 +130,14 @@ const openWA = (number, name) => {
         <aside :class="['fixed lg:static inset-y-0 left-0 z-50 w-64 bg-white border-r-4 border-[#F2E8D9] p-6 flex flex-col transition-transform duration-300 lg:translate-x-0', isSidebarOpen ? 'translate-x-0' : '-translate-x-full']">
             <div class="flex items-center justify-between mb-10">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-[#D98A59] text-white rounded-xl flex items-center justify-center text-xl border-2 border-[#F2E8D9]">🧉</div>
-                    <h2 class="font-black text-lg">Admin Haus</h2>
+                        <div class="w-10 h-10 rounded-xl overflow-hidden border-2 border-[#F2E8D9] bg-white">
+                            <img 
+                                :src="logo"
+                                alt="Logo"
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                    <h2 class="font-black text-lg">Admin</h2>
                 </div>
                 <button @click="isSidebarOpen = false" class="lg:hidden text-2xl">×</button>
             </div>

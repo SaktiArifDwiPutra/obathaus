@@ -113,13 +113,32 @@ npm run dev
 
 ---
 
-## 📸 Preview
 
-> Tambahkan screenshot dashboard di sini agar repository terlihat lebih profesional.
 
-```md
-![Preview Dashboard](public/preview-dashboard.png)
-```
+<h2 align="center">📱 Application Preview</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <b>Checkout</b><br><br>
+      <img src="public/preview/ssoh5.png" width="220">
+      <img src="public/preview/ssoh6.png" width="220">
+      <img src="public/preview/ssoh7.png" width="220">
+    </td><br>
+    <td align="center">
+      <b>Home Page</b><br><br>
+      <img src="public/preview/ssoh1.png" width="220">
+      <img src="public/preview/ssoh3.png" width="220">
+      <img src="public/preview/ssoh4.png" width="220">
+    </td><br>
+    <td align="center">
+      <b>Admin Dashboard</b><br><br>
+      <img src="public/preview/ssoh8.png" width="220">
+      <img src="public/preview/ssoh9.png" width="220">
+      <img src="public/preview/ssoh10.png" width="220">
+    </td><br>
+  </tr>
+</table>
 
 ## 👨‍💻 Developer
 
@@ -128,8 +147,7 @@ Developed with ❤️ by
 ### **Sakti Arif Dwi Putra S.**  
 Rekayasa Perangkat Lunak (RPL)
 
-📧 Email: obathausofficial@gmail.com  
-🌐 Portfolio: https://yourportfolio.com  
+📧 Email: obathausofficial@gmail.com
 🐙 GitHub: https://github.com/SaktiArifDwiPutra
 
 ---
