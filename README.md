@@ -113,6 +113,13 @@ npm run dev
 
 ---
 
+## 📸 Preview
+
+> Tambahkan screenshot dashboard di sini agar repository terlihat lebih profesional.
+
+```md
+![Preview Dashboard](public/preview-dashboard.png)
+```
 
 ## 👨‍💻 Developer
 

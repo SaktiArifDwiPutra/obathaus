@@ -53,14 +53,19 @@
         <div class="relative bg-[#D98A59] pt-12 pb-16 text-center z-10">
             <div class="w-24 h-24 mx-auto bg-white rounded-full p-1 shadow-lg border-[5px] border-[#FFFDF8] mb-3 flex items-center justify-center relative z-20">
                 <img 
-                    src="/logonya.png" 
+                    :src="logo" 
                     alt="Logo Obat Haus"
                     class="w-full h-full object-cover rounded-full"
                 />
             </div>
-        </div>
-            <h1 class="text-3xl font-black tracking-widest font-serif mt-2 text-white drop-shadow-md">OBAT HAUS</h1>
-            <p class="text-sm font-bold text-[#FFFDF8] mt-1 opacity-90 bg-black/10 inline-block px-4 py-1 rounded-full">resep by noona</p>
+
+            <h1 class="text-3xl font-black tracking-widest font-serif mt-2 text-white drop-shadow-md">
+                OBAT HAUS
+            </h1>
+
+            <p class="text-sm font-bold text-[#FFFDF8] mt-1 opacity-90 bg-black/10 inline-block px-4 py-1 rounded-full">
+                resep by noona
+            </p>
 
             <svg class="absolute -bottom-1 left-0 w-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#FFFDF8" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,208C384,203,480,181,576,176C672,171,768,181,864,202.7C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -218,6 +223,7 @@
 <script setup>
 import { ref, computed, nextTick } from 'vue';
 import { useForm } from '@inertiajs/vue3';
+const logo = "/logonya.png";
 
 const props = defineProps({ products: Array });
 
