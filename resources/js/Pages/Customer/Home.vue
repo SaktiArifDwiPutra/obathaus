@@ -52,8 +52,13 @@
 
         <div class="relative bg-[#D98A59] pt-12 pb-16 text-center z-10">
             <div class="w-24 h-24 mx-auto bg-white rounded-full p-1 shadow-lg border-[5px] border-[#FFFDF8] mb-3 flex items-center justify-center relative z-20">
-                <span class="text-4xl drop-shadow-sm">🧉</span>
+                <img 
+                    src="/logonya.png" 
+                    alt="Logo Obat Haus"
+                    class="w-full h-full object-cover rounded-full"
+                />
             </div>
+        </div>
             <h1 class="text-3xl font-black tracking-widest font-serif mt-2 text-white drop-shadow-md">OBAT HAUS</h1>
             <p class="text-sm font-bold text-[#FFFDF8] mt-1 opacity-90 bg-black/10 inline-block px-4 py-1 rounded-full">resep by noona</p>
 
@@ -188,9 +193,9 @@
                     <p class="font-black text-white text-sm">Terkoneksi Bersama Kami</p>
                 </div>
                 <div class="flex justify-center gap-5 mb-8">
-                    <a href="https://instagram.com/" target="_blank" class="w-14 h-14 bg-white text-[#D98A59] rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://tiktok.com/" target="_blank" class="w-14 h-14 bg-white text-[#D98A59] rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:-rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://wa.me/628000000000" target="_blank" class="w-14 h-14 bg-[#748E63] text-white rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/obathaus.co?igsh=NWNqcmI4NjltaWw5" target="_blank" class="w-14 h-14 bg-white text-[#D98A59] rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@obathaus.co?_r=1&_t=ZS-96DtqUHWwQH" target="_blank" class="w-14 h-14 bg-white text-[#D98A59] rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:-rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/08981224117" target="_blank" class="w-14 h-14 bg-[#748E63] text-white rounded-[1.5rem] flex items-center justify-center text-2xl shadow-lg hover:scale-110 hover:rotate-3 transition transform border-4 border-white/50 cursor-pointer"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <p class="text-[11px] text-white/70 font-bold uppercase tracking-widest">© 2026 Obat Haus - Resep by Noona</p>
             </div>
